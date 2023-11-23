@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/lesson.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Магазин</h1>
+
+      <form class="inputsShop">
+        <div class="productShop">
+          <label for="productName" class="labelShop">Название товара</label>
+          <br />
+          <input
+            type="text"
+            class="inputShop"
+            id="productName"
+            placeholder="Введите название товара"
+          />
+        </div>
+        <div class="productShop">
+          <label for="productPrice" class="labelShop">Стоимость товара</label>
+          <br />
+          <input
+            type="number"
+            class="inputShop"
+            id="productPrice"
+            placeholder="Какова стоимость товара"
+          />
+        </div>
+        <div class="productShop">
+          <label for="productQuantity" class="labelShop"
+            >Количество купленного товара</label
+          >
+          <br />
+          <input
+            type="number"
+            class="inputShop"
+            id="productQuantity"
+            placeholder="Количество приобретенного товара"
+          />
+        </div>
+        <div class="productShop">
+          <label for="resultCost" class="labelShop">Итоговая стоимость</label>
+          <br />
+          <input
+            type="number"
+            class="inputShop"
+            id="resultCost"
+            readonly
+            placeholder="Расчитывается автоматически..."
+          />
+        </div>
+
+        <button type="button" id="resultBtn">Получить чек</button>
+
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          class="message"
+          readonly
+        ></textarea>
+      </form>
+    </div>
+  </body>
+</html>

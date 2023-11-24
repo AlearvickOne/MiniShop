@@ -55,4 +55,6 @@ resultBtn.onclick = function () {
   resultCost.value = productPrice.value * productQuantity.value;
 
   resultMessage.value = `Приобретенный товар - ${productName.value} \n (${productQuantity.value} шт.) по ${productPrice.value} ₽. \n Всего было потрачено: ${resultCost.value}  ₽`;
+
+  console.log(resultMessage.value);
 };
